@@ -23,8 +23,8 @@
     --dk-gray: #222;
 
     /* Font Stacks */
+	--heading-fonts: Seymour One, Impact, sans-serif;
     --body-fonts: Lato, Arial, sans-serif;
-    --heading-fonts: Seymour One, Arial, sans-serif;
 }
 
 body{
@@ -44,12 +44,9 @@ header{
 }
 
 h1, h2, h3{
-	/* center align the text */
 	text-align: center;
-	/* use a web font here (instructions on page) */
 	font-family: var(--heading-fonts);
-	/* make the heading text all small caps style */
-	text-transform: lowercase;
+	font-variant: small-caps;
 }
 
 h2{
@@ -77,14 +74,20 @@ nav ul{
 
 nav a{
 	/* make these display as block level elements */
+	display: block;
 	margin: 1rem auto;
 	padding: 1rem;
 	background-color: var(--tiffany);
 	/* set the font color to #222 (--dk-gray) */
+	color: #222(--dk-gray);
 	/* center align the text */
+	text-align: center;
 	/* remove the underline */
+	text-decoration: none;
 	/* make the font's size 1.2rem */
+	font-size: 1.2rem;
 	/* make the font bolder (600) */
+	font-weight: 600;
 }
 
 nav a:hover{
@@ -106,8 +109,11 @@ section{
 
 p{
 	/* set a max-width of 55 characters */
+	max-width: 55ch;
 	/* add an indent on the first line of 2rem */
+	text-indent: 2rem;
 	/* center those paragraphs (not the text) on the page */
+	margin: 0, auto;
 	padding: 0.5rem;
 }
 
